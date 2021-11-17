@@ -8,7 +8,7 @@ using System.Threading;
 
 namespace Project_OOP_Bank
 {
-    class EmployeePlateform
+    class EmployeePlateform //instantiated by the main menu class, allow an employee to commit tasks, works like ClientsPlateform
     {
         string Pin = "A1234";
         public EmployeePlateform(ClientList clientList) 
@@ -18,7 +18,7 @@ namespace Project_OOP_Bank
                 MenuForEmployee(clientList);
             }
         }
-        private bool PasswordCheck() 
+        private bool PasswordCheck() //password check asks an employee a password and compare it to this.Pin wich is A1234, it returns a boolean
         {
             
             for(int i = 0; i < 3; i++) 
@@ -43,7 +43,7 @@ namespace Project_OOP_Bank
             Run_syst run = new Run_syst();
             return false;
         }
-        public static void MenuForEmployee(ClientList clientList) 
+        public static void MenuForEmployee(ClientList clientList) //this is an interactive menu for the employee, he can choose the action he wants to commit
         {
             Console.Clear();
             Console.Clear();
