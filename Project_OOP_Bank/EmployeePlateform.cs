@@ -10,7 +10,7 @@ namespace Project_OOP_Bank
 {
     class EmployeePlateform
     {
-        string Pin = "A123";
+        string Pin = "A1234";
         public EmployeePlateform(ClientList clientList) 
         {
             if (PasswordCheck()) 
